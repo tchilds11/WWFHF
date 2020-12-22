@@ -37,7 +37,7 @@ class Face():
 
     def special(self, heel):
         if self.special_power == "strong":
-            special = random.randint(11,20)
+            special = random.randint(11, 20)
         health = heel.health
         heel.health -= (special)
         print("\n\n%s It has to be over! %d damage done to %s!" %
@@ -117,12 +117,12 @@ while heel.health > 0 and face.health > 0:
                 print("You just got knocked the F out!")
 
 def keep_playing():
-    while len(opponent_list) >= 1:
+    while len(character_list) >= 1:
          if keep_playing == 'y':
-             player.health = 50 
+             face.health = 100 
              print("n\You ate a protein bar!")
-             print("Go kick some ass!: %d \n" % (player.health))
-             print("Your next opponent is: %s" % (opponent_list[0]))
+             print("Go kick some ass!: %d \n" % (heel.health))
+             print("Your next opponent is: %s" % (character_list[0]))
             
          elif keep_playing == 'n':
             print("I told you, i'm the best there is, the best there was, and the best there ever will be!\n\n")
